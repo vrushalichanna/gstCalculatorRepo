@@ -21,7 +21,7 @@ public class ProductBasket {
         System.out.println(productList);
     }
 
-    public void getBillDetails() {
+    public double getBillDetails() {
         Food food = new Food();
         Furniture furniture = new Furniture();
         Electronics electronics = new Electronics();
@@ -34,5 +34,7 @@ public class ProductBasket {
 
         double totalElectronicsBill = electronics.gstTaxCalculator();
         System.out.println("Total Amount  of Electronics = " + totalElectronicsBill);
+        return  totalFoodBill;
     }
 }
+
